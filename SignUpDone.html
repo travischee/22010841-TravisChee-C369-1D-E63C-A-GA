@@ -1,0 +1,125 @@
+<!--I declare that this code was written by me. 
+I will not copy or allow others to copy my code. 
+I understand that copying code is considered as plagiarism.
+
+Student Name: Travis Chee
+Student ID:  22010841
+Class: C369-1D-E63C-A
+Date/Time Last modified: 14/8/2023, 8:00pm -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Application</title>
+    <style>
+      body {
+        background-color: white;
+        font-family: 'Trebuchet MS';
+      }
+      
+      .container {
+        max-width: 600px;
+        margin: 0 auto; /* auto helps to automatically center the container*/
+        background-color: beige;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+        animation: fadein 1s;
+      }
+      
+      .container h1 {
+        margin-bottom: 20px;
+        color: green;
+        animation: pulse 1s infinite;
+      }
+      
+      .container p {
+        margin-bottom: 20px;
+        font-size: 18px;
+        color: red;
+        animation: slidein 1s;
+      }
+      
+      .container span {
+        font-weight: bold;
+        color:red;
+      }
+      
+      .button {
+        background-color: lightblue;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 4px;
+        font-family: 'Trebuchet MS';
+        margin-top: 20px;
+        animation: pulse 1s infinite;
+
+      }
+      
+      .button:hover {
+        background-color: limegreen;
+        animation: none;
+      }
+      
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        color: grey;
+        padding: 10px;
+      }
+      
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+      @keyframes slidein {
+        from {
+          transform: translateY(-50%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+    <!--Bootstrap CSS Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Application Received!</h1>
+      <p>Thank you for signing up! We have received your application and it is currently being reviewed. </p>
+      <p>Available time slots for the face-to-face meeting will be provided to your email, so keep an eye out!</p>
+      <p><span>Application ID:</span> 6392</p>
+      <nav>
+    <p>
+    <button class = button>
+    <a href="Home.html">Back to home</a>
+    </button>
+    </p>
+    </nav>
+    </div>
+  <footer>
+    <p>&copy; 2023 Travis's Personal Loan Website</p>
+  </footer>
+  </body>
+</html>

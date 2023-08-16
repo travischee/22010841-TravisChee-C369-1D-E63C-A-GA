@@ -1,0 +1,339 @@
+<!--I declare that this code was written by me. 
+I will not copy or allow others to copy my code. 
+I understand that copying code is considered as plagiarism.
+
+Student Name: Travis Chee
+Student ID:  22010841
+Class: C369-1D-E63C-A
+Date/Time Last modified: 14/8/2023, 8:00pm -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <style>
+      body {
+        background-color: beige;
+        font-family: 'Trebuchet MS';
+      }
+      
+      header {
+        background-image: url('images');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color:black;
+      }
+      
+      header h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        color: black;
+      }
+
+      header h4{
+        font-size: 15px;
+        margin-bottom: 20px;
+        color: black;
+        height: 400px;
+        position:relative;
+        left:335px
+      }
+      
+      .benefits {
+        background-color: burlywood;
+        padding: 40px 0;
+        text-align: center;
+      }
+      
+      .benefits h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color:lightskyblue;
+      }
+      
+      .benefits ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .benefits li {
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .benefits li img {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+      
+      .benefits li h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: lightskyblue;
+      }
+      
+      .benefits li p {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      
+      .btn2 {
+        background-color: lightskyblue;
+        color: white;
+        border: none;
+        padding: 20px 40px;
+        font-size: 24px;
+        border-radius: 4px;
+        margin-top: 50px;
+        cursor: pointer;
+        animation: pulse 1s infinite;
+      }
+      
+      .btn2:hover {
+        background-color: lime;
+        animation: none;
+      }
+      
+      .main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+      .intro {
+        flex: 1 1 500px;
+        margin-right: 40px;
+      }
+      
+      .intro h2 {
+        font-size: 38px;
+        margin-bottom: 20px;
+        color: lightskyblue;
+      }
+      
+      .intro p {
+        font-size: 18px;
+        text-align: justify; 
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+      
+      .testimonials {
+        flex: 1 1 400px;
+        margin-right: 40px;
+        text-align: center;
+      }
+      
+      .testimonials h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: lightskyblue;
+      }
+      
+      .testimonial {
+        background-color: beige;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .testimonial img {
+        width: 100px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+      }
+      
+      .testimonial p {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      
+      .loan-info {
+        flex: 1 1 300px;
+        margin-right: 40px;
+      }
+      
+      .loan-info h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: lightskyblue;
+      }
+      
+      .loan-info p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+      
+      .steps {
+        flex: 1 1 300px;
+        text-align: center;
+      }
+      
+      .steps h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: lightskyblue;
+      }
+      
+      .steps ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .steps {
+        width: 250px;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      
+      .steps li h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: lightskyblue;
+      }
+
+      img {
+                width: 40%;
+                border-width: 5px;
+                border-style: solid;
+                border-color: lightskyblue;
+                border-radius: 10%;
+
+            }
+
+      footer {
+        color: grey;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 20px;
+      }
+      #top{
+        position:relative;
+        left:110px;
+
+      }
+
+      
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+    </style>
+    <!--Bootstrap CSS Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <header>
+      <div id="top">
+        <h1>Travis's Personal Loan Service</h1>
+        <p>Get the funds you need, when you need them, with our fast and easy application process.</p>
+        <button class="btn2" onclick="location.href='LogIn.html'">Apply Now</button>
+      </div>
+      <div>
+        <h4>
+        <p>Need help? Contact us <a href="Help.html"> Here!! </a></p>
+        </h4>
+      </div>
+    </header>
+    <div class="benefits">
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>
+          <img src="images/Fast-Approval-1-300x300.png">
+          <h3>Fast Approval</h3>
+          <p>Get your loan approved in as little as 24 hours.</p>
+        </li>
+        <li>
+          <img src="images/download.png" alt="Low Rates">
+          <h3>Low Rates</h3>
+          <p>Our competitive rates mean you can get the money you need without breaking the bank.</p>
+        </li>
+        <li>
+          <img src="images/images.jpg" alt="Flexible Terms">
+          <h3>Flexible Terms</h3>
+          <p>We offer repayment terms that fit your budget and lifestyle.</p>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="main">
+      <div class="intro">
+        <h2>Get the Funds You Need Now</h2>
+        <p>Our personal loan application service makes it easy to get the funds you need, when you need them. With our fast and easy application process, you can get approved in as little as 24 hours and have the money deposited directly into your account.</p>
+        <class="steps">
+          <h2>Steps to Apply</h2>
+          <ul>
+            <li>
+              <img src="images/Screenshot_Form.png" alt="Step 1">
+              <h3>Step 1</h3>
+              <p>After logging in/Signing up, fill out the online application form.</p>
+            </li>
+            <li>
+              <img src="images/Screenshot_Submit.png" alt="Step 2">
+              <h3>Step 2</h3>
+              <p>Submit required documents for verification.</p>
+            </li>
+            <li>
+              <img src="images/Screenshot_Process.png" alt="Step 3">
+              <h3>Step 3</h3>
+              <p>Wait for loan approval and receive funds. For new users wait for a follow up email</p>
+            </li>
+          </ul>
+      </div>
+      <div class="testimonials">
+        <h2>What Our Celebrated Customers Are Saying</h2>
+        <div class="testimonial">
+          <img src="images/download.jpg" alt="Testimonial 1">
+          <p>"I needed a loan to help cover some unexpected expenses and Travis's Personal Loan Service came through for me. The process was fast and easy and I got the money I needed in no time. - Elon Musk "</p>
+        </div>
+        <div class="testimonial">
+          <img src="images/th.jpg" alt="Testimonial 2">
+          <p>"I was skeptical about applying for a personal loan online, but Travis's Personal Loan Service made me feel at ease. The customer service was excellent and I would definitely recommend them to anyone looking for a loan. - Doug McMillion "</p>
+        </div>
+        <footer>
+          <p>&copy; 2023 Travis's Personal Loan Website</p>
+        </footer>
+  </body>
+</html>
